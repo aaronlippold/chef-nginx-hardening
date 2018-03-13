@@ -57,7 +57,7 @@ end
 directory '/usr/share/nginx/html' do
   owner node['nginx_owner']
   group node['nginx_owner']
-  mode '664'
+  mode '1775'
 end
 directory '/var/log/nginx' do
   owner  node['system_admin']
